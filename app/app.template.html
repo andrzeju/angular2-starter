@@ -1,0 +1,7 @@
+<h1>Awesome Vinyl Directory</h1>
+
+<input #newTitle (keyup.enter)="addVinyl(newTitle.value)"/> <button (click)="addVinyl(newTitle.value)">Add</button>
+
+<ul>
+    <li *ngFor="#title of titles">{{title}} <button (click)="removeVinyl()">X</button></li>
+</ul>
